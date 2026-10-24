@@ -1,0 +1,733 @@
+
+/* =====================================================
+   AI GENERATED QUESTIONS
+   PREMIUM PROFESSIONAL UI
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.ai-page {
+    min-height: 100vh;
+    padding: 55px 25px;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(14, 165, 233, 0.08),
+            transparent 30%
+        ),
+        #f5f7fb;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.ai-header {
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.ai-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+
+.ai-header h1 {
+    margin: 0;
+
+    color: #0f172a;
+
+    font-size: 34px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.8px;
+}
+
+
+.ai-header p {
+    margin-top: 12px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.ai-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.ai-form-card {
+
+    background: #ffffff;
+
+    padding: 38px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =====================================================
+   FORM TITLE
+===================================================== */
+
+.form-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-bottom: 7px;
+}
+
+
+.form-title span {
+
+    font-size: 19px;
+}
+
+
+.form-title h2 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.form-subtitle {
+
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.form-group {
+
+    margin-bottom: 21px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT + SELECT
+===================================================== */
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input::placeholder {
+
+    color: #a0a9b8;
+}
+
+
+.form-group input:hover,
+.form-group select:hover {
+
+    border-color: #b8c2d1;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+
+.form-group select {
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   GENERATE BUTTON
+===================================================== */
+
+.generate-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.1px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.generate-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.20);
+}
+
+
+.generate-btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   RESULT CARD
+===================================================== */
+
+.result-card {
+
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.07);
+
+    animation: resultAppear 0.35s ease;
+}
+
+
+/* =====================================================
+   RESULT HEADER
+===================================================== */
+
+.result-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #eef0f4;
+
+    margin-bottom: 22px;
+}
+
+
+.result-header > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.result-header h2 {
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.result-icon {
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   AI BADGE
+===================================================== */
+
+.ai-badge {
+
+    padding: 6px 11px;
+
+    border-radius: 6px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =====================================================
+   INFORMATION BOXES
+===================================================== */
+
+.question-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+}
+
+
+.info-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-height: 75px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e7ebf1;
+
+    transition: 0.2s ease;
+}
+
+
+.info-box:hover {
+
+    border-color: #cbd5e1;
+
+    transform: translateY(-1px);
+}
+
+
+.info-box > span {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eaf2ff;
+
+    font-size: 17px;
+}
+
+
+.info-box div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    min-width: 0;
+}
+
+
+.info-box small {
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+}
+
+
+.info-box strong {
+
+    color: #334155;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* Remove unnecessary colorful backgrounds */
+
+.technology-box,
+.topic-box,
+.experience-box {
+
+    background: #f8fafc;
+
+    border-left: 3px solid #2563eb;
+}
+
+
+/* =====================================================
+   QUESTIONS CONTENT
+===================================================== */
+
+.questions-content {
+
+    padding: 22px;
+
+    background: #fafbfc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 11px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+
+    max-height: 650px;
+
+    overflow-y: auto;
+}
+
+
+/* =====================================================
+   QUESTIONS SCROLLBAR
+===================================================== */
+
+.questions-content::-webkit-scrollbar {
+
+    width: 6px;
+}
+
+
+.questions-content::-webkit-scrollbar-track {
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+}
+
+
+.questions-content::-webkit-scrollbar-thumb {
+
+    background: #cbd5e1;
+
+    border-radius: 10px;
+}
+
+
+.questions-content::-webkit-scrollbar-thumb:hover {
+
+    background: #94a3b8;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.ai-footer {
+
+    margin-top: 35px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.ai-footer span {
+
+    color: #64748b;
+
+    margin: 0 5px;
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes resultAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(12px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .ai-page {
+
+        padding: 35px 18px;
+    }
+
+
+    .ai-header h1 {
+
+        font-size: 28px;
+    }
+
+
+    .ai-form-card {
+
+        padding: 28px;
+    }
+
+
+    .question-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .result-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .ai-page {
+
+        padding: 25px 12px;
+    }
+
+
+    .ai-header h1 {
+
+        font-size: 24px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    .ai-header p {
+
+        font-size: 13px;
+    }
+
+
+    .ai-form-card {
+
+        padding: 22px 18px;
+
+        border-radius: 14px;
+    }
+
+
+    .form-title h2 {
+
+        font-size: 18px;
+    }
+
+
+    .result-card {
+
+        padding: 20px 16px;
+
+        border-radius: 14px;
+    }
+
+
+    .result-header h2 {
+
+        font-size: 19px;
+    }
+
+
+    .questions-content {
+
+        padding: 16px;
+
+        font-size: 13px;
+    }
+
+}
+
